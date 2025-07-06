@@ -1,0 +1,121 @@
+{
+  "name": "math",
+  "version": "1.0.0",
+  "description": "Mathematical functions and constants for JP language",
+  "author": "Joaopaulopadilha",
+  "license": "MIT",
+  
+  "includes": [
+    "<cmath>",
+    "<algorithm>"
+  ],
+  
+  "custom_code": "",
+  
+  "functions": {
+    "sqrt": {
+      "description": "Square root of a number",
+      "cpp_name": "std::sqrt",
+      "params": [
+        {"name": "x", "type": "double", "description": "Number to calculate square root"}
+      ],
+      "return": {
+        "type": "double",
+        "description": "Square root of x"
+      },
+      "example": "result = sqrt(16)  // Returns 4.0"
+    },
+    
+    "pow": {
+      "description": "Power function - x raised to y",
+      "cpp_name": "std::pow",
+      "params": [
+        {"name": "base", "type": "double", "description": "Base number"},
+        {"name": "exponent", "type": "double", "description": "Exponent"}
+      ],
+      "return": {
+        "type": "double", 
+        "description": "base^exponent"
+      },
+      "example": "result = pow(2, 3)  // Returns 8.0"
+    },
+    
+    "sin": {
+      "description": "Sine function",
+      "cpp_name": "std::sin",
+      "params": [
+        {"name": "x", "type": "double", "description": "Angle in radians"}
+      ],
+      "return": {
+        "type": "double",
+        "description": "Sine of x"
+      },
+      "example": "result = sin(PI / 2)  // Returns 1.0"
+    },
+    
+    "cos": {
+      "description": "Cosine function", 
+      "cpp_name": "std::cos",
+      "params": [
+        {"name": "x", "type": "double", "description": "Angle in radians"}
+      ],
+      "return": {
+        "type": "double",
+        "description": "Cosine of x"
+      },
+      "example": "result = cos(0)  // Returns 1.0"
+    },
+    
+    "abs": {
+      "description": "Absolute value",
+      "cpp_name": "std::abs",
+      "params": [
+        {"name": "x", "type": "double", "description": "Number"}
+      ],
+      "return": {
+        "type": "double",
+        "description": "Absolute value of x"
+      },
+      "example": "result = abs(-5)  // Returns 5.0"
+    },
+    
+    "ceil": {
+      "description": "Ceiling function - smallest integer >= x",
+      "cpp_name": "std::ceil",
+      "params": [
+        {"name": "x", "type": "double", "description": "Number"}
+      ],
+      "return": {
+        "type": "double",
+        "description": "Ceiling of x"
+      },
+      "example": "result = ceil(3.2)  // Returns 4.0"
+    },
+    
+    "floor": {
+      "description": "Floor function - largest integer <= x",
+      "cpp_name": "std::floor",
+      "params": [
+        {"name": "x", "type": "double", "description": "Number"}
+      ],
+      "return": {
+        "type": "double",
+        "description": "Floor of x"
+      },
+      "example": "result = floor(3.8)  // Returns 3.0"
+    }
+  },
+  
+  "constants": {
+    "PI": {
+      "value": "3.14159265358979323846",
+      "type": "double",
+      "description": "Mathematical constant Pi"
+    },
+    "E": {
+      "value": "2.71828182845904523536", 
+      "type": "double",
+      "description": "Mathematical constant e (Euler's number)"
+    }
+  }
+}
